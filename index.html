@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpendWise personal finance dashboard">
+    <title>SpendWise | Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a href="#" class="logo">
+            <span class="logo-icon">S</span>
+            <span>SpendWise</span>
+        </a>
+
+        <p class="nav-label">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="#" class="nav-item active">
+                <span>▦</span> Dashboard
+            </a>
+            <a href="#" class="nav-item">
+                <span>↗</span> Transactions
+            </a>
+            <a href="#" class="nav-item">
+                <span>◷</span> Budgets
+            </a>
+            <a href="#" class="nav-item">
+                <span>▤</span> Reports
+            </a>
+            <a href="#" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <span class="help-icon">?</span>
+                <strong>Need help?</strong>
+                <p>We're here to help you manage your finances.</p>
+                <a href="#">Visit Help Center →</a>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">JD</div>
+                <div class="profile-info">
+                    <strong>John Doe</strong>
+                    <span>Personal Account</span>
+                </div>
+                <span class="profile-menu">⋮</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="topbar">
+            <div class="welcome">
+                <p>Wednesday, November 11, 2026</p>
+                <h1>Welcome back, John! 👋</h1>
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-button" aria-label="Notifications">♧</button>
+                <div class="header-avatar">JD</div>
+            </div>
+        </header>
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="page-intro">
+            <div>
+                <h2>Financial Overview</h2>
+                <p>Here's what's happening with your money.</p>
+            </div>
+
+            <span class="period">November 2026 ▾</span>
+        </section>
+
+        <!-- SUMMARY CARDS -->
+        <section class="summary-grid">
+
+            <article class="summary-card balance-card">
+                <div class="summary-top">
+                    <span>Total Balance</span>
+                    <span class="summary-icon">◈</span>
+                </div>
+                <h3>KES 185,450.00</h3>
+                <span class="summary-note">Available balance</span>
+            </article>
+
+            <article class="summary-card">
+                <div class="summary-top">
+                    <span>Total Income</span>
+                    <span class="summary-icon income-icon">↗</span>
+                </div>
+                <h3>KES 250,000.00</h3>
+                <span class="summary-note positive">↑ 12.5% from last month</span>
+            </article>
+
+            <article class="summary-card">
+                <div class="summary-top">
+                    <span>Total Expenses</span>
+                    <span class="summary-icon expense-icon">↘</span>
+                </div>
+                <h3>KES 64,550.00</h3>
+                <span class="summary-note negative">↑ 4.2% from last month</span>
+            </article>
+        </section>
+
+        <!-- CATEGORY SECTION -->
+        <section class="category-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Spending Categories</h2>
+                    <p>Track where your money goes.</p>
+                </div>
+                <a href="#" class="view-all">View all →</a>
+            </div>
+
+            <div class="category-grid">
+
+                <article class="category-card" tabindex="0">
+                    <div class="category-top">
+                        <span class="category-icon food">🍔</span>
+                        <span class="category-percentage">25%</span>
+                    </div>
+                    <h3>Food & Groceries</h3>
+                    <p>Monthly spending</p>
+                    <strong>KES 16,000</strong>
+                    <div class="progress">
+                        <span style="width: 25%"></span>
+                    </div>
+                </article>
+
+                <article class="category-card" tabindex="0">
+                    <div class="category-top">
+                        <span class="category-icon transport">🚗</span>
+                        <span class="category-percentage">15%</span>
+                    </div>
+                    <h3>Transport</h3>
+                    <p>Monthly spending</p>
+                    <strong>KES 9,500</strong>
+                    <div class="progress">
+                        <span style="width: 15%"></span>
+                    </div>
+                </article>
+
+                <article class="category-card" tabindex="0">
+                    <div class="category-top">
+                        <span class="category-icon rent">🏠</span>
+                        <span class="category-percentage">35%</span>
+                    </div>
+                    <h3>Rent & Housing</h3>
+                    <p>Monthly spending</p>
+                    <strong>KES 22,500</strong>
+                    <div class="progress">
+                        <span style="width: 35%"></span>
+                    </div>
+                </article>
+
+                <article class="category-card" tabindex="0">
+                    <div class="category-top">
+                        <span class="category-icon entertainment">🎬</span>
+                        <span class="category-percentage">8%</span>
+                    </div>
+                    <h3>Entertainment</h3>
+                    <p>Monthly spending</p>
+                    <strong>KES 5,000</strong>
+                    <div class="progress">
+                        <span style="width: 8%"></span>
+                    </div>
+                </article>
+
+                <article class="category-card" tabindex="0">
+                    <div class="category-top">
+                        <span class="category-icon savings">💰</span>
+                        <span class="category-percentage">12%</span>
+                    </div>
+                    <h3>Savings</h3>
+                    <p>Monthly allocation</p>
+                    <strong>KES 7,550</strong>
+                    <div class="progress">
+                        <span style="width: 12%"></span>
+                    </div>
+                </article>
+
+                <article class="category-card" tabindex="0">
+                    <div class="category-top">
+                        <span class="category-icon utilities">💡</span>
+                        <span class="category-percentage">5%</span>
+                    </div>
+                    <h3>Utilities</h3>
+                    <p>Monthly spending</p>
+                    <strong>KES 4,000</strong>
+                    <div class="progress">
+                        <span style="width: 5%"></span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- RECENT TRANSACTIONS -->
+        <section class="transactions">
+            <div class="section-heading">
+                <div>
+                    <h2>Recent Transactions</h2>
+                    <p>Your latest financial activities.</p>
+                </div>
+                <a href="#" class="view-all">See all →</a>
+            </div>
+
+            <div class="transaction-list">
+                <div class="transaction-row">
+                    <span class="transaction-icon food">🍔</span>
+                    <div class="transaction-details">
+                        <strong>Supermarket Shopping</strong>
+                        <span>Food · Nov 10, 2026</span>
+                    </div>
+                    <strong class="amount">- KES 3,500</strong>
+                </div>
+
+                <div class="transaction-row">
+                    <span class="transaction-icon transport">🚗</span>
+                    <div class="transaction-details">
+                        <strong>Transport Fare</strong>
+                        <span>Transport · Nov 9, 2026</span>
+                    </div>
+                    <strong class="amount">- KES 800</strong>
+                </div>
+
+                <div class="transaction-row">
+                    <span class="transaction-icon savings">💰</span>
+                    <div class="transaction-details">
+                        <strong>Monthly Savings</strong>
+                        <span>Savings · Nov 8, 2026</span>
+                    </div>
+                    <strong class="amount income">+ KES 7,550</strong>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 SpendWise. Manage your money wisely.
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
